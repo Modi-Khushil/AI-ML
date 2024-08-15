@@ -1,0 +1,75 @@
+1) for learning rate = 0.01 and thresold = 7
+Epoch number :0
+weights --->  [0. 0. 0.]
+--------------------
+Epoch number :1
+weights --->  [0.01 0.01 0.01]
+--------------------
+Epoch number :2
+weights --->  [0.   0.02 0.01]
+--------------------
+Epoch number :3
+weights --->  [-0.01  0.02  0.01]
+--------------------
+Epoch number :4
+weights --->  [-0.01  0.02  0.02]
+--------------------
+Epoch number :5
+weights --->  [-0.02  0.02  0.01]
+--------------------
+Epoch number :6
+weights --->  [-0.02  0.02  0.01]
+1 
+
+2) for learning rate = 1 and thresold = 7
+--------------------
+Epoch number :0
+weights --->  [0. 0. 0.]
+--------------------
+Epoch number :1
+weights --->  [1. 1. 1.]
+--------------------
+Epoch number :2
+weights --->  [0. 2. 1.]
+--------------------
+Epoch number :3
+weights --->  [-1.  2.  1.]
+--------------------
+Epoch number :4
+weights --->  [-1.  2.  2.]
+--------------------
+Epoch number :5
+weights --->  [-2.  2.  1.]
+--------------------
+Epoch number :6
+weights --->  [-2.  2.  1.]
+1
+
+3) for learning rate = 100000000 and thresold = 7
+Epoch number :0
+weights --->  [0. 0. 0.]
+--------------------
+Epoch number :1
+weights --->  [1.e+08 1.e+08 1.e+08]
+--------------------
+Epoch number :2
+weights --->  [0.e+00 2.e+08 1.e+08]
+--------------------
+Epoch number :3
+weights --->  [-1.e+08  2.e+08  1.e+08]
+--------------------
+Epoch number :4
+weights --->  [-1.e+08  2.e+08  2.e+08]
+--------------------
+Epoch number :5
+weights --->  [-2.e+08  2.e+08  1.e+08]
+--------------------
+Epoch number :6
+weights --->  [-2.e+08  2.e+08  1.e+08]
+1
+
+Observations:
+1) Till epoch number 4 the weights are not enough to trigger function 
+2) From epoch number 5 weights are stable and predict correct value of weights each time.    
+3) So when the threshold is less than 5 we get wrong answer and in greater than or equal to 5 threshold we get right prediction.
+4) Learning rate does not have much impact on the perceptron model as no change is observed except in weights which are multiplied by learning rate.
